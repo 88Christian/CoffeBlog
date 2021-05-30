@@ -120,6 +120,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 50px;
 }
 
 .coffee-quote .quote {
@@ -135,11 +136,101 @@ body {
   font-weight: 300;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  padding: 30px;
+}
+
+.gallery .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery .row .col {
+  width: 400px;
+  margin: 10px;
+}
+
+.gallery .row .col img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.contacts {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.contacts .contact-form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(128, 128, 128, 0.1);
+  width: 500px;
+  padding: 50px;
+  background: #000;
+  margin: 10px;
+}
+
+.contacts .contact-form h2,
+.contacts .contact-form h3,
+input[type="text"],
+button {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contacts .contact-form h2 {
+  font-size: 50px;
+}
+
+.contacts .contact-form h3 {
+  font-size: 25px;
+}
+
+input[type="text"] {
+  padding: 10px;
+}
+
+input[type="text"]:nth-child(5) {
+  height: 200px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive rules */
 @media only screen and (max-width: 600px) {
   .main-header .nav-main .logo-main h1 a {
     font-size: 60px;
   }
   .main-header .nav-main .slogan-main p {
     font-size: 18px;
+  }
+  .gallery .row .col img {
+    width: 100%;
+    object-fit: cover;
   }
 }
