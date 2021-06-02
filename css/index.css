@@ -120,7 +120,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin: 80px;
 }
 
 .coffee-quote .quote {
@@ -166,7 +166,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  margin: 0 60px;
   flex-wrap: wrap;
 }
 
@@ -219,6 +219,39 @@ button {
   color: #000;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.main-footer {
+  background: #000;
+  color: #fff;
+}
+
+.main-footer .footer-desc {
+  padding: 50px 0;
+}
+
+.footer-desc .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-desc .row .col {
+  padding: 10px 50px;
+  line-height: 2;
+}
+
+.footer-desc .row .col-1 a {
+  margin: 0 10px;
+}
+
+.footer-desc h5,
+.footer-desc h2 {
+  color: rgb(128, 128, 128);
+}
+
+.footer-desc p {
+  font-size: 13px;
 }
 
 /* Responsive rules */
